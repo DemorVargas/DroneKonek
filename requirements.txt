@@ -1,0 +1,14 @@
+# Core has zero dependencies. Everything below is optional.
+
+# WiFi / local-network transport (real swarms)
+paho-mqtt>=2.0
+
+# ArduPilot / PX4 autopilot link
+pymavlink>=2.4
+
+# Secure mode: authenticated encryption of swarm traffic.
+# Needed by dronekonek.crypto and dronekonek.secure_transport.
+cryptography>=42.0
+
+# End-to-end tests: a real MQTT broker to test against.
+amqtt>=0.13
